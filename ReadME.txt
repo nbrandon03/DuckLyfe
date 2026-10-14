@@ -1,77 +1,95 @@
-# DuckLyfe2 Setup Instructions
+# Duck Lyfe
+
+Duck Lyfe is a JavaFX-based virtual pet simulation game where players manage a duck's needs, interact with its environment, and maintain its well-being.
+
+## Features
+
+- **Duck Needs Management:** Monitor health, hunger, happiness, and sleep.
+- **Currency System:** Manage coins earned through gameplay.
+- **Inventory System:** Interact with the game's inventory.
+- **Park Environment:** Explore and interact with the park.
+- **Persistent Data:** Save game data and settings using JSON files.
+- **Interactive Controls:** Navigate the game using keyboard inputs.
+- **Dynamic Gameplay:** Uses timed events to update game mechanics.
+
+## Technologies
+
+- Java 23
+- JavaFX
+- Maven
+- JSON
 
 ## Prerequisites
 
-### For Windows:
-1. Install **Visual Studio Code** from [https://code.visualstudio.com/](https://code.visualstudio.com/).
-2. Install the following extensions in Visual Studio Code:
-   - **Extension Pack for Java** (by Microsoft)
-   - **Extension Pack for Java Auto Config** (by Microsoft)
+Before running the project, install the following:
 
-### For macOS:
-1. Install **Visual Studio Code** from [https://code.visualstudio.com/](https://code.visualstudio.com/).
-2. Install **Homebrew** (a package manager for macOS):
-   - Open the Terminal and run the following command:
-     ```sh
-     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-     ```
-   - Follow the on-screen instructions to complete the installation.
-   - After installation, verify that Homebrew is installed by running:
-     ```sh
-     brew --version
-     ```
-3. Install **Maven** using Homebrew:
-   - Run the following command in the Terminal:
-     ```sh
-     brew install maven
-     ```
-   - Verify Maven installation by running:
-     ```sh
-     mvn --version
-     ```
-4. Install the following extensions in Visual Studio Code:
-   - **Extension Pack for Java** (by Microsoft)
-   - **Extension Pack for Java Auto Config** (by Microsoft)
+- **JDK 23** — [Download Java](https://jdk.java.net/)
+- **Apache Maven** — [Installation Guide](https://maven.apache.org/install.html)
+- **Visual Studio Code** — [Download VS Code](https://code.visualstudio.com/)
 
----
+If you're using VS Code, install the following extensions:
 
-## Running the Project
+- [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) by Microsoft
+- [Extension Pack for Java Auto Config](https://marketplace.visualstudio.com/items?itemName=redhat.java) — verify the extension name and publisher in the VS Code Marketplace before installing.
 
-1. Clone the repository or download the project files to your local machine.
-2. Open the project folder (`DuckLyfe2`) in **Visual Studio Code**.
-3. Ensure that the `pom.xml` file is present in the root of the project.
-4. Open the integrated terminal in Visual Studio Code (Ctrl+` or View > Terminal).
-5. Run the following command to build and run the project:
-   ```sh
-   mvn javafx:run
-   ```
+## Installation and Setup
 
----
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/Duck-Lyfe.git
+cd Duck-Lyfe
+```
+
+Replace `YOUR-USERNAME` with your GitHub username.
+
+### 2. Verify Java and Maven
+
+Check that Java is installed:
+
+```bash
+java --version
+```
+
+Check that Maven is installed:
+
+```bash
+mvn --version
+```
+
+Ensure Java reports version 23 and Maven is using the intended JDK.
+
+### 3. Open the Project
+
+Open the project folder in Visual Studio Code. Ensure that `pom.xml` is located in the project root directory.
+
+### 4. Run the Application
+
+From the integrated terminal, execute:
+
+```bash
+mvn javafx:run
+```
+
+Maven will resolve the configured dependencies and launch the application.
 
 ## Troubleshooting
 
-- **Missing Dependencies**: If you encounter issues with missing dependencies, ensure that Maven is installed and properly configured.
-- **JavaFX Errors**: Ensure that the `javafx-maven-plugin` is configured in the `pom.xml` file and that all required JavaFX dependencies are included.
-- **Homebrew Issues (macOS)**: If Homebrew commands fail, ensure that Homebrew is installed and up-to-date by running:
-  ```sh
-  brew update
-  ```
-- **JDK Version**: The project requires **JDK 23**. Ensure that your system has JDK 23 installed and configured. You can verify your Java version by running:
-  ```sh
-  java --version
-  ```
-  If the version is incorrect, download and install JDK 23 from [https://jdk.java.net/](https://jdk.java.net/).
+**Java version issues**
+- Ensure JDK 23 is installed and configured.
+- Check that `JAVA_HOME` points to your JDK installation.
+- Verify that `java --version` and `mvn --version` report the expected Java version.
 
----
+**Missing dependencies**
+- Confirm that Maven is installed and available in your system's PATH.
+- Run the application from the directory containing `pom.xml`.
+- Check your internet connection so Maven can download required dependencies.
 
-## Additional Notes
+**JavaFX launch errors**
+- Verify that the required JavaFX dependencies and Maven plugin are configured in `pom.xml`.
+- Review the terminal output for dependency or configuration errors.
 
-- **Java Version**: Ensure that your `JAVA_HOME` environment variable is set to the JDK 23 installation directory.
-- **Maven Version**: Ensure that Maven is installed and up-to-date. You can verify Maven by running:
-  ```sh
-  mvn --version
-  ```
-- **Extensions**: The required Visual Studio Code extensions (Extension Pack for Java and Extension Pack for Java Auto Config) will automatically configure your environment for Java development.
-- **Mac Users**: If you encounter permission issues with Homebrew, try running the commands with `sudo` (e.g., `sudo brew install maven`).
+## Project Information
 
-If you encounter any issues, refer to the official documentation for Visual Studio Code, Homebrew, Maven, or JavaFX.
+Duck Lyfe was developed as a Java application project, demonstrating object-oriented programming, graphical user interface development, application state management, and persistent data storage.
+
