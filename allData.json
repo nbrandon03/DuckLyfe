@@ -1,0 +1,38 @@
+{
+    "Default": {
+        "Duck": {
+            "tiredness": 0,
+            "colour": "white",
+            "happiness": 100,
+            "coins": 0,
+            "name": "Default",
+            "health": 10,
+            "day": 0,
+            "hunger": 0,
+            "isDead": false
+        },
+        "Inventory": {
+            "Night Cap": 0,
+            "Food": 3,
+            "Toy": 0
+        }
+    },
+    "aaaa": {
+        "Duck": {
+            "tiredness": 0,
+            "colour": "white",
+            "happiness": 100,
+            "coins": 0,
+            "name": "aaaa",
+            "health": 10,
+            "day": 0,
+            "hunger": 10,
+            "isDead": false
+        },
+        "Inventory": {
+            "Night Cap": 0,
+            "Food": 0,
+            "Toy": 0
+        }
+    }
+}
