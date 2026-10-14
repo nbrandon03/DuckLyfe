@@ -37,14 +37,31 @@
 
 ## Running the Project
 
-1. Clone the repository or download the project files to your local machine.
-2. Open the project folder (`DuckLyfe2`) in **Visual Studio Code**.
-3. Ensure that the `pom.xml` file is present in the root of the project.
-4. Open the integrated terminal in Visual Studio Code (Ctrl+` or View > Terminal).
-5. Run the following command to build and run the project:
-   ```sh
-   mvn javafx:run
-   ```
+### Option 1: Run the JAR
+
+1. Download the JAR file from the repository.
+2. Ensure Java 23 is installed.
+3. Open the JAR file to launch the application.
+
+If double-clicking the JAR does not work, open a terminal in the directory containing the file and run:
+
+```sh
+java -jar DuckLyfe2.jar
+```
+
+Replace `DuckLyfe2.jar` with the actual name of the JAR file.
+
+### Option 2: Run from Source
+
+1. Clone the repository or download the project files.
+2. Open the `DuckLyfe2` folder in Visual Studio Code.
+3. Ensure `pom.xml` is present in the project root.
+4. Open the integrated terminal.
+5. Run the following command:
+
+```sh
+mvn javafx:run
+```
 
 ---
 
